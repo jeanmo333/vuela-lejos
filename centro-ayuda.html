@@ -1,72 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agencia Vuela-lejos</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/app.css">
-</head>
-<body>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
     <header>
-        <h1 class="nombre-sitio"> Vuela <span> Lejos </span></h1>
+      <h1 class="nombre-sitio">Vuela <span> Lejos </span></h1>
     </header>
-    
+
     <div class="contenedor-navegacion">
-        <nav class="nav-principal contenedor">
-            <a href="index.html">Inicio</a>
-            <a href="destinos.html">Destinos</a>
-            <a href="hoteles.html">Hoteles</a>
-            <a href="centro-ayuda.html">Centro de ayuda</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
+      <nav class="nav-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="destinos.html">Destinos</a>
+        <a href="hoteles.html">Hoteles</a>
+        <a href="centro-ayuda.html">Centro de ayuda</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
     </div>
 
-    
-    <main class="contenido-principal contenedor ">
-        <h1>centro de ayuda</h1>
-    </main>
+    <main class="contenido-principal contenedor">
+      <h2 class="text-center">Preguntas frecuentes </h2>
 
-
-
-
-    <footer class="site-footer">
-        <div class="grid-footer contenedor">
-            <div>
-                <h3>Confianza en tus compras</h3>
-
-                <nav class="footer-menu">
-                    <a href="#">Condiciones de compra</a>
-                    <a href="#">Política de privacidad</a>
-                    <a href="#">Derechos y obligaciones del pasajero</a>
-                </nav>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                ¿Cómo funciona el Check-in automático? 
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Una vez que hayas realizado la compra de tu pasaje en vuelo nacional, te enviaremos inmediatamente tu tarjeta de embarque dinámica. Cuando queden 48 horas antes de tu vuelo, ya tendrás la información actualizada con los últimos detalles de tu viaje.  
+                El día de tu vuelo, preséntate en el aeropuerto normalmente. Si viajas con equipaje de mano, solo tienes que pasar directamente a la puerta de embarque con tu cédula de identidad o pasaporte. En tu tarjeta de embarque dinámica verás actualizado el número de puerta. 
+                Si llevas equipaje de bodega, dirígete a nuestro counter o kiosco de autoatención para etiquetar tus maletas y entregarlas en el counter. 
             </div>
-
-            <div>
-                <h3>Sobre Nosotros</h3>
-                <nav class="footer-menu">
-                    <a href="#">Nuestra Historia</a>
-                    <a href="#">Misión, Visión y Valores</a>
-                    <a href="#">Carreras</a>
-                </nav>
-            </div>
-
-            <div>
-                <h3>Soporte</h3>
-                <nav class="footer-menu">
-                    <a href="#">Preguntas Frecuentes</a>
-                    <a href="#">Ayuda en línea</a>
-                    <a href="#">Confianza y Seguridad</a>
-                </nav>
-            </div>
-
+          </div>
         </div>
 
-        <p class="copyright">Todos los derechos Reservados, Vuela lejos</p>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                ¿Puedo cambiar un vuelo o la fecha de mi pasaje? 
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Puedes llamar para verificar si tu pasaje te permite cambiar la fecha o destino de tu viaje sin multas ni diferencias tarifarias. 
+                Si el vuelo es cancelado o reprogramado debido a la pandemia COVID-19, o por otras razones de seguridad o de fuerza mayor, podrás reprogramar tu viaje, solicitar el reembolso del valor del pasaje o contratar otros servicios de nuestra aerolínea. Conoce más en nuestra sección de política de cambios.  
+                Ten en cuenta que por ahora, el cambio de pasajes en línea sólo está disponible en Chile y Ecuador. 
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                ¿Qué pasa si mi vuelo se canceló? 
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p><strong> No te preocupes, llama y podrás aceptar el nuevo itinerario que te proponemos o:</strong></p> 
+               <p>- Elegir una nueva fecha  </p>           
+               <p>- Pedir la devolución   </p>              
+               <p><strong>Si quieres elegir una nueva fecha</strong></p> 
+               
+               <ul>
+                <li> Podrás hacer un cambio sin costo en la misma cabina del viaje original. </li>
+                <li> Podrás reprogramar el nuevo vuelo durante la vigencia de tu pasaje*. </li>
+               </ul>
+                        
+               <p><strong> *Vigencia del pasaje:</strong></p>
+               <ul>
+                <li>Si tu viaje original comenzaba entre el 1 de marzo y el 31 de diciembre 2020, la vigencia es hasta el 31 de diciembre de 2021 </li>
+                <li>Si tu viaje original comienza en 2021, la vigencia es de 12 meses a partir de la fecha del primer vuelo de tu pasaje. </li>
+                <li>Si ya comenzaste el viaje, deberás completar el regreso no más allá de 12 meses desde tu primer vuelo.</li>
+               </ul> 
+                 <p><strong> Si prefieres no viajar y pedir la devolución</strong></p>   
+                <ul>
+                    <li>Recibirás un Travel Voucher que podrás canjear por servicios de la aerolínea o dinero. Si usaste tus millas para canjear tu pasaje, éstas serán devueltas en tu cuenta de socio.</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+
+        
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="grid-footer contenedor">
+        <div>
+          <h3>Confianza en tus compras</h3>
+
+          <nav class="footer-menu">
+            <a href="#">Condiciones de compra</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Derechos y obligaciones del pasajero</a>
+          </nav>
+        </div>
+
+        <div>
+          <h3>Sobre Nosotros</h3>
+          <nav class="footer-menu">
+            <a href="#">Nuestra Historia</a>
+            <a href="#">Misión, Visión y Valores</a>
+            <a href="#">Carreras</a>
+          </nav>
+        </div>
+
+        <div>
+          <h3>Soporte</h3>
+          <nav class="footer-menu">
+            <a href="#">Preguntas Frecuentes</a>
+            <a href="#">Ayuda en línea</a>
+            <a href="#">Confianza y Seguridad</a>
+          </nav>
+        </div>
+      </div>
+
+      <p class="copyright">Todos los derechos Reservados, Vuela lejos</p>
     </footer>
-</body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,153 +1,150 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agencia Vuela-lejos</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/app.css">
-</head>
-<body>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
     <header>
-        <h1 class="nombre-sitio"> Vuela <span> Lejos </span></h1>
+      <h1 class="nombre-sitio">Vuela <span> Lejos </span></h1>
     </header>
-    
+
     <div class="contenedor-navegacion">
-        <nav class="nav-principal contenedor">
-            <a href="index.html">Inicio</a>
-            <a href="destinos.html">Destinos</a>
-            <a href="hoteles.html">Hoteles</a>
-            <a href="centro-ayuda.html">Centro de ayuda</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
+      <nav class="nav-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="destinos.html">Destinos</a>
+        <a href="hoteles.html">Hoteles</a>
+        <a href="centro-ayuda.html">Centro de ayuda</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
     </div>
 
-    
-    <main class="contenido-principal contenedor ">
-        <h2 class="text-center">Contacto</h2>
+    <main class="contenido-principal contenedor">
+      <h2 class="text-center">Contactarnos</h2>
+      <div class="m-3">
+        <h3 class="text-center m-3 text">
+          <strong>Telefono 1: </strong> 996040090
+        </h3>
+        <h3 class="text-center m-3 text">
+          <strong>Telefono 2: </strong> 996040091
+        </h3>
+        <h3 class="text-center m-3 text ">
+          <strong>Email: </strong> contacto@aerolinea.cl
+        </h3>
+      </div>
 
-        <form class="formulario">
-            <fieldset>
-                <legend>Tus Datos</legend>
-                
-                <div class="campo">
-                    <label for="nombre">Nombre: </label>
-                    <input  id="nombre" type="text" placeholder="Tu Nombre" required>
-                </div>
+      <h2 class="text-center datos">Enviar sus datos</h2>
 
-                <div class="campo">
-                    <label for="asunto">Asunto:</label>
-                    <input id="asunto" type="text" placeholder="Tu Asunto"  required>
-                </div>
+      <form class="formulario">
+        <fieldset>
+          <legend>Tus Datos</legend>
 
-                <div class="campo">
-                    <label for="email">E-mail:</label>
-                    <input id="email" type="email" placeholder="Tu Email" >
-                </div>
+          <div class="campo">
+            <label for="nombre">Nombre: </label>
+            <input id="nombre" type="text" placeholder="Tu Nombre" required />
+          </div>
 
-                <div class="campo">
-                    <label for="tel">Teléfono:</label>
-                    <input id="tel" type="tel" placeholder="Tu Teléfono" >
-                </div>
+          <div class="campo">
+            <label for="asunto">Asunto:</label>
+            <input id="asunto" type="text" placeholder="Tu Asunto" required />
+          </div>
 
-                <div class="campo">
-                    <label for="tel">Mensaje:</label>
-                    <textarea rows="10" cols="20"></textarea>
-                </div>
+          <div class="campo">
+            <label for="email">E-mail:</label>
+            <input id="email" type="email" placeholder="Tu Email" />
+          </div>
 
-            </fieldset>
+          <div class="campo">
+            <label for="tel">Teléfono:</label>
+            <input id="tel" type="tel" placeholder="Tu Teléfono" />
+          </div>
 
-            <fieldset>
-                <legend>País</legend>
+          <div class="campo">
+            <label for="tel">Mensaje:</label>
+            <textarea rows="10" cols="20"></textarea>
+          </div>
+        </fieldset>
 
-                <div class="campo">
-                    <label for="pais">País</label>
-                    <select id="pais">
-                        <option value="">-- Seleccione -- </option>
-                        <option value="MX">México</option>
-                        <option value="PR">Perú</option>
-                        <option value="CO">Colombia</option>
-                        <option value="AR">Argentina</option>
-                        <option value="ES">España</option>
-                        <option value="CL">Chile</option>
-                    </select>
+        <fieldset>
+          <legend>País</legend>
 
-                </div>
+          <div class="campo">
+            <label for="pais">País</label>
+            <select id="pais">
+              <option value="">-- Seleccione --</option>
+              <option value="MX">México</option>
+              <option value="US">Estados Unidos</option>
+              <option value="FR">Francia</option>
+              <option value="IG">Ingleterra</option>
+              <option value="ES">España</option>
+              <option value="CL">Chile</option>
+              <option value="CA">Canada</option>
+              <option value="IT">Italia</option>
+              <option value="Su">Suiza</option>
+            </select>
+          </div>
+        </fieldset>
 
-            </fieldset>
-
-            <fieldset>
-                <legend>Información Extra</legend>
-                
-                <div class="campo">
-                    <label for="cliente">Cliente</label>
-                    <input id="cliente" type="radio" name="tipo" value="cliente">
-                </div>
-
-                <div class="campo">
-                    <label for="proveedor">Proveedor</label>
-                    <input id="proveedor" type="radio" name="tipo" value="proveedor">
-                </div>
-
-                <div class="campo">
-                    <label for="categoria">Categoría de Interés</label>
-                    <input list="categorias" name="categorias">
-                    <datalist id="categorias">
-                        <option value="Cocina">
-                        <option value="Exterior">
-                        <option value="Recamaras">
-                        <option value="Oficina">
-                        <option value="Televisión">
-                    </datalist>
-                </div>
-
-            </fieldset>
-
-            <input class="btn" type="submit" value="Enviar Formulario" >
-        </form>
-        
+        <input class="btn" type="submit" value="Enviar Formulario" />
+      </form>
     </main>
 
-
-
-
     <footer class="site-footer">
-        <div class="grid-footer contenedor">
-            <div>
-                <h3>Confianza en tus compras</h3>
+      <div class="grid-footer contenedor">
+        <div>
+          <h3>Confianza en tus compras</h3>
 
-                <nav class="footer-menu">
-                    <a href="#">Condiciones de compra</a>
-                    <a href="#">Política de privacidad</a>
-                    <a href="#">Derechos y obligaciones del pasajero</a>
-                </nav>
-            </div>
-
-            <div>
-                <h3>Sobre Nosotros</h3>
-                <nav class="footer-menu">
-                    <a href="#">Nuestra Historia</a>
-                    <a href="#">Misión, Visión y Valores</a>
-                    <a href="#">Carreras</a>
-                </nav>
-            </div>
-
-            <div>
-                <h3>Soporte</h3>
-                <nav class="footer-menu">
-                    <a href="#">Preguntas Frecuentes</a>
-                    <a href="#">Ayuda en línea</a>
-                    <a href="#">Confianza y Seguridad</a>
-                </nav>
-            </div>
-
+          <nav class="footer-menu">
+            <a href="#">Condiciones de compra</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Derechos y obligaciones del pasajero</a>
+          </nav>
         </div>
 
-        <p class="copyright">Todos los derechos Reservados, Vuela lejos</p>
+        <div>
+          <h3>Sobre Nosotros</h3>
+          <nav class="footer-menu">
+            <a href="#">Nuestra Historia</a>
+            <a href="#">Misión, Visión y Valores</a>
+            <a href="#">Carreras</a>
+          </nav>
+        </div>
+
+        <div>
+          <h3>Soporte</h3>
+          <nav class="footer-menu">
+            <a href="#">Preguntas Frecuentes</a>
+            <a href="#">Ayuda en línea</a>
+            <a href="#">Confianza y Seguridad</a>
+          </nav>
+        </div>
+      </div>
+
+      <p class="copyright">Todos los derechos Reservados, Vuela lejos</p>
     </footer>
-</body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
